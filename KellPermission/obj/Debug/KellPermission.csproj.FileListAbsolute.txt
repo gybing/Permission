@@ -1,0 +1,12 @@
+D:\工作\NEW\KellPermission\KellPermission\bin\Debug\KellPermission.XML
+D:\工作\NEW\KellPermission\KellPermission\bin\Debug\KellPermission.dll
+D:\工作\NEW\KellPermission\KellPermission\bin\Debug\KellPermission.pdb
+D:\工作\NEW\KellPermission\KellPermission\obj\Debug\ResolveAssemblyReference.cache
+D:\工作\NEW\KellPermission\KellPermission\obj\Debug\KellPermission.dll
+D:\工作\NEW\KellPermission\KellPermission\obj\Debug\KellPermission.pdb
+E:\soft\KellPermission\KellPermission\bin\Debug\KellPermission.dll
+E:\soft\KellPermission\KellPermission\bin\Debug\KellPermission.pdb
+E:\soft\KellPermission\KellPermission\obj\Debug\ResolveAssemblyReference.cache
+E:\soft\KellPermission\KellPermission\obj\Debug\KellPermission.dll
+E:\soft\KellPermission\KellPermission\obj\Debug\KellPermission.pdb
+E:\soft\KellPermission\KellPermission\bin\Debug\KellPermission.XML

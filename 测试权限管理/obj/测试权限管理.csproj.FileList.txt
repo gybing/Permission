@@ -1,0 +1,13 @@
+bin\Debug\测试权限管理.exe
+bin\Debug\测试权限管理.pdb
+bin\Debug\KellListBoxSelecter.dll
+bin\Debug\KellPermission.dll
+bin\Debug\KellPermission.pdb
+bin\Debug\KellPermission.xml
+bin\Debug\KellListBoxSelecter.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\测试权限管理.Form1.resources
+obj\Debug\测试权限管理.Properties.Resources.resources
+obj\Debug\测试权限管理.csproj.GenerateResource.Cache
+obj\Debug\测试权限管理.exe
+obj\Debug\测试权限管理.pdb

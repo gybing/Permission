@@ -1,0 +1,13 @@
+E:\后阶段\KellPermission\测试权限管理\obj\Debug\ResolveAssemblyReference.cache
+E:\后阶段\KellPermission\测试权限管理\obj\Debug\测试权限管理.Form1.resources
+E:\后阶段\KellPermission\测试权限管理\obj\Debug\测试权限管理.Properties.Resources.resources
+E:\后阶段\KellPermission\测试权限管理\obj\Debug\测试权限管理.csproj.GenerateResource.Cache
+E:\后阶段\KellPermission\测试权限管理\bin\Debug\测试权限管理.exe
+E:\后阶段\KellPermission\测试权限管理\bin\Debug\测试权限管理.pdb
+E:\后阶段\KellPermission\测试权限管理\bin\Debug\KellListBoxSelecter.dll
+E:\后阶段\KellPermission\测试权限管理\bin\Debug\KellPermission.dll
+E:\后阶段\KellPermission\测试权限管理\bin\Debug\KellPermission.pdb
+E:\后阶段\KellPermission\测试权限管理\bin\Debug\KellPermission.xml
+E:\后阶段\KellPermission\测试权限管理\bin\Debug\KellListBoxSelecter.pdb
+E:\后阶段\KellPermission\测试权限管理\obj\Debug\测试权限管理.exe
+E:\后阶段\KellPermission\测试权限管理\obj\Debug\测试权限管理.pdb

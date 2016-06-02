@@ -1,0 +1,6 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\KellPermission.XML
+bin\Debug\KellPermission.dll
+bin\Debug\KellPermission.pdb
+obj\Debug\KellPermission.dll
+obj\Debug\KellPermission.pdb

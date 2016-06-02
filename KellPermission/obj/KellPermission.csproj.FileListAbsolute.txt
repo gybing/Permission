@@ -1,0 +1,6 @@
+E:\后阶段\KellPermission\KellPermission\bin\Debug\KellPermission.dll
+E:\后阶段\KellPermission\KellPermission\bin\Debug\KellPermission.pdb
+E:\后阶段\KellPermission\KellPermission\obj\Debug\ResolveAssemblyReference.cache
+E:\后阶段\KellPermission\KellPermission\obj\Debug\KellPermission.dll
+E:\后阶段\KellPermission\KellPermission\obj\Debug\KellPermission.pdb
+E:\后阶段\KellPermission\KellPermission\bin\Debug\KellPermission.XML

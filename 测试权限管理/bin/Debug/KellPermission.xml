@@ -1,0 +1,646 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KellPermission</name>
+    </assembly>
+    <members>
+        <member name="T:KellPermission.Project">
+            <summary>
+            项目组类
+            </summary>
+        </member>
+        <member name="M:KellPermission.Project.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.Project.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:KellPermission.Project.#ctor(System.String,KellPermission.RoleCollection)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name"></param>
+            <param name="roles"></param>
+        </member>
+        <member name="M:KellPermission.Project.ToString">
+            <summary>
+            重载基类的ToString()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KellPermission.Project.ID">
+            <summary>
+            项目组ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.Project.Roles">
+            <summary>
+            项目组拥有的角色集合
+            </summary>
+        </member>
+        <member name="P:KellPermission.Project.Name">
+            <summary>
+            项目组名称
+            </summary>
+        </member>
+        <member name="P:KellPermission.Project.Description">
+            <summary>
+            项目组描述
+            </summary>
+        </member>
+        <member name="T:KellPermission.Department">
+            <summary>
+            部门类
+            </summary>
+        </member>
+        <member name="M:KellPermission.Department.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.Department.#ctor(System.String)">
+            <summary>
+            以名称创建部门对象
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:KellPermission.Department.#ctor(System.String,KellPermission.RoleCollection)">
+            <summary>
+            以名称和角色集合创建部门对象
+            </summary>
+            <param name="name"></param>
+            <param name="roles"></param>
+        </member>
+        <member name="M:KellPermission.Department.#ctor(System.String,KellPermission.Department)">
+            <summary>
+            以名称和上级部门创建新部门对象
+            </summary>
+            <param name="name"></param>
+            <param name="parent"></param>
+        </member>
+        <member name="M:KellPermission.Department.#ctor(System.String,KellPermission.RoleCollection,KellPermission.Department)">
+            <summary>
+            以名称、角色集合和上级部门创建新部门对象
+            </summary>
+            <param name="name"></param>
+            <param name="roles"></param>
+            <param name="parent"></param>
+        </member>
+        <member name="M:KellPermission.Department.CreateSubDepartment(System.String)">
+            <summary>
+            以指定的名称创建子部门
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KellPermission.Department.CreateSubDepartment(System.String,KellPermission.RoleCollection)">
+            <summary>
+            以指定的名称创建子部门
+            </summary>
+            <param name="name"></param>
+            <param name="roles"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KellPermission.Department.IsMyChildren(KellPermission.Department,System.Boolean)">
+            <summary>
+            指定部门是否为我的后代
+            </summary>
+            <param name="dep">指定部门</param>
+            <param name="recursion">是否递归判断后代，默认为true，只找下一代为false</param>
+            <returns></returns>
+        </member>
+        <member name="M:KellPermission.Department.ToString">
+            <summary>
+            重载基类的ToString()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KellPermission.Department.ID">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.Department.Roles">
+            <summary>
+            部门拥有的角色集合
+            </summary>
+        </member>
+        <member name="P:KellPermission.Department.Name">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:KellPermission.Department.Parent">
+            <summary>
+            上级部门
+            </summary>
+        </member>
+        <member name="P:KellPermission.Department.Description">
+            <summary>
+            部门描述
+            </summary>
+        </member>
+        <member name="T:KellPermission.Module">
+            <summary>
+            业务模块类
+            </summary>
+        </member>
+        <member name="M:KellPermission.Module.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.Module.#ctor(System.String)">
+            <summary>
+            由指定的名称构造业务模块对象
+            </summary>
+        </member>
+        <member name="M:KellPermission.Module.#ctor(System.String,System.String)">
+            <summary>
+            由指定的业务模块代码和业务模块值构造业务模块对象
+            </summary>
+            <param name="code"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:KellPermission.Module.#ctor(System.String,System.String,System.String)">
+            <summary>
+            由指定的名称、业务模块代码和业务模块值构造业务模块对象
+            </summary>
+            <param name="name"></param>
+            <param name="code"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:KellPermission.Module.ToString">
+            <summary>
+            模块名称与模块值的组合字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KellPermission.Module.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.Module.ModuleContent">
+            <summary>
+            业务模块的内容
+            </summary>
+        </member>
+        <member name="P:KellPermission.Module.Name">
+            <summary>
+            业务模块的名称
+            </summary>
+        </member>
+        <member name="P:KellPermission.Module.Description">
+            <summary>
+            业务模块的描述
+            </summary>
+        </member>
+        <member name="T:KellPermission.User">
+            <summary>
+            用户类
+            </summary>
+        </member>
+        <member name="M:KellPermission.User.GetAllPermissions">
+            <summary>
+            获取当前用户拥有的所有权限
+            </summary>
+        </member>
+        <member name="M:KellPermission.User.ToString">
+            <summary>
+            重载基类的ToString()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KellPermission.User.BelongToDepart(KellPermission.Department)">
+            <summary>
+            当前用户是否属于指定的部门
+            </summary>
+            <param name="depart"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KellPermission.User.#ctor">
+            <summary>
+            用户的默认构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.User.#ctor(System.String,System.String)">
+            <summary>
+            由用户名和密码构造用户对象
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:KellPermission.User.#ctor(System.String,System.String,KellPermission.Department)">
+            <summary>
+            由用户名、密码和所在部门ID构造用户对象
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="depart"></param>
+        </member>
+        <member name="M:KellPermission.User.#ctor(System.String,System.String,KellPermission.Department,KellPermission.Project)">
+            <summary>
+            由用户名、密码、所在部门ID和所在项目组ID构造用户对象
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="depart"></param>
+            <param name="proj"></param>
+        </member>
+        <member name="P:KellPermission.User.ID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.User.Departments">
+            <summary>
+            所在部门ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.User.Projects">
+            <summary>
+            所在项目组ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.User.UserGroups">
+            <summary>
+            所在用户组
+            </summary>
+        </member>
+        <member name="P:KellPermission.User.Roles">
+            <summary>
+            用户拥有的角色集合
+            </summary>
+        </member>
+        <member name="P:KellPermission.User.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:KellPermission.User.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:KellPermission.User.LastLogTime">
+            <summary>
+            最后登录时间
+            </summary>
+        </member>
+        <member name="P:KellPermission.User.Online">
+            <summary>
+            当前是否在线
+            </summary>
+        </member>
+        <member name="P:KellPermission.User.Description">
+            <summary>
+            用户描述
+            </summary>
+        </member>
+        <member name="T:KellPermission.Action">
+            <summary>
+            操作类
+            </summary>
+        </member>
+        <member name="M:KellPermission.Action.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.Action.#ctor(System.String)">
+            <summary>
+            由指定的名称构造操作对象
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:KellPermission.Action.#ctor(System.String,System.String)">
+            <summary>
+            由指定的操作代码和操作值构造操作对象
+            </summary>
+            <param name="code"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:KellPermission.Action.#ctor(System.String,System.String,System.String)">
+            <summary>
+            由指定的名称、操作代码和操作值构造操作对象
+            </summary>
+            <param name="name"></param>
+            <param name="code"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:KellPermission.Action.ToString">
+            <summary>
+            操作名称与操作值的组合字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KellPermission.Action.ID">
+            <summary>
+            操作ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.Action.ActionContent">
+            <summary>
+            操作的内容
+            </summary>
+        </member>
+        <member name="P:KellPermission.Action.Name">
+            <summary>
+            操作的名称
+            </summary>
+        </member>
+        <member name="P:KellPermission.Action.Description">
+            <summary>
+            操作的描述
+            </summary>
+        </member>
+        <member name="T:KellPermission.Role">
+            <summary>
+            角色类
+            </summary>
+        </member>
+        <member name="M:KellPermission.Role.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.Role.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:KellPermission.Role.#ctor(System.String,KellPermission.PermissionCollection)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name"></param>
+            <param name="permissions"></param>
+        </member>
+        <member name="M:KellPermission.Role.ToString">
+            <summary>
+            重载基类的ToString()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KellPermission.Role.ID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.Role.Name">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:KellPermission.Role.Permissions">
+            <summary>
+            角色拥有的权限集合
+            </summary>
+        </member>
+        <member name="P:KellPermission.Role.Description">
+            <summary>
+            角色描述
+            </summary>
+        </member>
+        <member name="T:KellPermission.UserGroup">
+            <summary>
+            表示由User对象组成的集合
+            </summary>
+        </member>
+        <member name="M:KellPermission.UserGroup.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.UserGroup.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:KellPermission.UserGroup.#ctor(System.String,KellPermission.RoleCollection)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name"></param>
+            <param name="roles"></param>
+        </member>
+        <member name="M:KellPermission.UserGroup.ToString">
+            <summary>
+            重载基类的ToString()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KellPermission.UserGroup.Add(KellPermission.User)">
+            <summary>
+            向集合中添加元素
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KellPermission.UserGroup.Remove(KellPermission.User)">
+            <summary>
+            从集合中移出指定元素
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:KellPermission.UserGroup.RemoveAt(System.Int32)">
+            <summary>
+            从集合中移出指定索引的元素
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="P:KellPermission.UserGroup.ID">
+            <summary>
+            用户组ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.UserGroup.Roles">
+            <summary>
+            用户组拥有的角色集合
+            </summary>
+        </member>
+        <member name="P:KellPermission.UserGroup.Name">
+            <summary>
+            用户组的名称
+            </summary>
+        </member>
+        <member name="P:KellPermission.UserGroup.Description">
+            <summary>
+            用户组描述
+            </summary>
+        </member>
+        <member name="P:KellPermission.UserGroup.Item(System.Int32)">
+            <summary>
+            索引器
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:KellPermission.UserGroup.Count">
+            <summary>
+            取得集合元素个数
+            </summary>
+        </member>
+        <member name="T:KellPermission.PermissionCollection">
+            <summary>
+            表示由Permission对象组成的集合
+            </summary>
+        </member>
+        <member name="M:KellPermission.PermissionCollection.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.PermissionCollection.Add(KellPermission.Permission)">
+            <summary>
+            向集合中添加元素
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KellPermission.PermissionCollection.Remove(KellPermission.Permission)">
+            <summary>
+            从集合中移出指定元素
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:KellPermission.PermissionCollection.RemoveAt(System.Int32)">
+            <summary>
+            从集合中移出指定索引的元素
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="P:KellPermission.PermissionCollection.Item(System.Int32)">
+            <summary>
+            索引器
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:KellPermission.PermissionCollection.Count">
+            <summary>
+            取得集合元素个数
+            </summary>
+        </member>
+        <member name="T:KellPermission.Permission">
+            <summary>
+            权限类
+            </summary>
+        </member>
+        <member name="M:KellPermission.Permission.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.Permission.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.Permission.#ctor(KellPermission.Module,KellPermission.Action)">
+            <summary>
+            由业务模块和操作构造权限对象
+            </summary>
+            <param name="module"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:KellPermission.Permission.#ctor(System.String,KellPermission.Module,KellPermission.Action)">
+            <summary>
+            由业务模块和操作构造权限对象
+            </summary>
+            <param name="name"></param>
+            <param name="module"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:KellPermission.Permission.ToString">
+            <summary>
+            权限名称与权限值的组合字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KellPermission.Permission.ID">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:KellPermission.Permission.Name">
+            <summary>
+            权限的名称
+            </summary>
+        </member>
+        <member name="P:KellPermission.Permission.Description">
+            <summary>
+            权限描述
+            </summary>
+        </member>
+        <member name="P:KellPermission.Permission.TheModule">
+            <summary>
+            权限的业务模块
+            </summary>
+        </member>
+        <member name="P:KellPermission.Permission.TheAction">
+            <summary>
+            权限的操作
+            </summary>
+        </member>
+        <member name="P:KellPermission.Permission.PermissionCode">
+            <summary>
+            权限代码
+            </summary>
+        </member>
+        <member name="P:KellPermission.Permission.PermissionValue">
+            <summary>
+            权限的值
+            </summary>
+        </member>
+        <member name="T:KellPermission.RoleCollection">
+            <summary>
+            表示由Role对象组成的集合
+            </summary>
+        </member>
+        <member name="M:KellPermission.RoleCollection.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:KellPermission.RoleCollection.Add(KellPermission.Role)">
+            <summary>
+            向集合中添加元素
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KellPermission.RoleCollection.Remove(KellPermission.Role)">
+            <summary>
+            从集合中移出指定元素
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:KellPermission.RoleCollection.RemoveAt(System.Int32)">
+            <summary>
+            从集合中移出指定索引的元素
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="P:KellPermission.RoleCollection.Item(System.Int32)">
+            <summary>
+            索引器
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:KellPermission.RoleCollection.Count">
+            <summary>
+            取得集合元素个数
+            </summary>
+        </member>
+    </members>
+</doc>
